@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import nudge
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let myNudge = Nudge()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

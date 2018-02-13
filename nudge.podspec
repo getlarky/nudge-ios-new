@@ -32,11 +32,19 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'nudge/Classes/**/*'
   
+  s.resources = 'nudge/Assets/*.plist'
+
   # s.resource_bundles = {
-  #   'nudge' => ['nudge/Assets/*.png']
+  #   # 'nudge' => ['nudge/Assets/*.png']
+  #   'nudge' => ['nudge/Assets/*.plist'],
+  #   'nudge' => ['nudge/Assets/*']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.static_framework = true
+  s.dependency 'Firebase/Core'
+  s.static_framework = true
+  s.dependency 'Firebase/Messaging'
 end
